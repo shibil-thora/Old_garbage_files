@@ -1,0 +1,24 @@
+
+p{
+    border : 2px solid blue ;
+    text-shadow : 3px 3px 3px rgb(0, 191, 255) , -3px -3px 3px rgb(251, 255, 0)
+}
+h1{
+    text-shadow : 2px 2px 5px rgb(30, 23, 255) , -2px -2px 2px rgb(255, 0, 179)
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    box-shadow: 3px 3px 3px black;
+    background-color: antiquewhite;
+    margin-left: auto;
+}
+#box2{
+    background-color: blue;
+}  
+body{
+    margin : 0px
+}
+img{
+    height : 100px ;
+}

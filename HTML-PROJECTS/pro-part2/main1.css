@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(255, 220, 138);
+    margin : 0px ;
+}
+h1{ 
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+header{
+    background-color: lightcyan;
+}
+div{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+#anc{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique ;
+    color: yellowgreen;
+}
+footer{
+    background-color: blueviolet;
+}

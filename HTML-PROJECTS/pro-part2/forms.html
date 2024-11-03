@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label for="username">username: </label>
+        <input type="text" id="username" minlength="3" required>
+
+        <br><br>
+        <label for="password">password : </label> 
+        <input type="password" id="" required minlength="3" maxlength="6" placeholder="hi">
+
+        <br><br>
+        <label for="email">emal : </label>
+        <input type="email" id="email"  >
+
+        <br><br>
+        <label for="phone">phone : </label>
+        <input type="tel" id="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-8]{3}-[0-9]{4}">
+
+        <br><br>
+        <label for="bday">birthdate : </label>
+        <input type="date" id="bday">
+
+        <br><br>
+        <label for="stock">Stock : </label>
+        <input type="number" id="stock" min="0" max="100">
+        
+        <br>
+        <label for="Mr">Mr : </label>
+        <input type="radio" value="mr" name="1">
+        <label for="Mr">Mr : </label>
+        <input type="radio" value="mr" name="1">
+        <label for="Mr">Mr : </label>
+        <input type="radio" value="mr" name="1">
+        
+        <br><br>
+        <label for="gender">Gender : </label>
+        <select>
+            <option value="m">male</option>
+            <option value="f">Female</option>
+            <option value="mi">other</option>
+        </select>
+
+
+        <br><br>
+        <label for="sub">subscrbie</label>
+        <input type="checkbox">
+
+        <br><br>
+        <label for="comments">comments :</label>
+        <textarea id="comments" rows="3" cols="3"></textarea>
+
+        <br><br>
+        <label for="file">choose a file : </label>
+        <input type="file" id="file" accept="audio/mp3">
+
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

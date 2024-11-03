@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px ;
+}
+main{
+    margin: 10px ;
+}
+h2{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(98, 10, 98);
+    margin: 0px ;
+    padding: 0px ;
+    overflow: hidden;
+}
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    padding: 5px 15px;
+}
+.navbar a:hover{
+    background-color:  rgb(63, 5, 62);;
+}
+.navbar li{
+    float: left;
+}
+
+aside{
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+footer{
+    clear: both;
+    height: 100px;
+    background-color: rgb(98, 10, 98);
+    color: whitesmoke;
+    padding: 5px;
+    position: relative;
+}
+#foot_text{
+    text-align: center ;
+    top:20px; 
+}
+@media screen and (max-width:600px){
+    aside , section , article {
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(114, 244, 200);
+}
+#top{
+    height: 20px;
+    width: 100px;
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    font-size: 18px ;
+    cursor: pointer;
+    display: inline-block ;
+}
+#it{
+    height: 20px;
+    width: 100px;
+    background-color: rgb(7, 7, 119);
+    padding: 10px;
+    position: relative;
+    left:-10px;
+    margin:0px;
+    top:9px ;
+    display: none;
+}
+#top:hover p {
+    display: inline-block;
+
+}
+#it:hover{
+    background-color: rgb(24, 24, 203);
+}
+#top:active {
+    background-color: rgb(198, 39, 39);
+}

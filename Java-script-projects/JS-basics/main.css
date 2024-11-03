@@ -1,0 +1,39 @@
+button{
+    font-size: 15px;
+    
+}
+body{
+    background-color: #2cd2ef;
+}
+h1{
+    color: #086648 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+p{
+    color: #9e0000;
+}
+.dBoard {
+    height: 200px;
+    width: 600px;
+    margin: 150px;
+    border: 10px double rgb(255, 255, 255) ;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-align: left;
+    text-shadow: 3px 3px 5px rgb(6, 8, 99);
+    padding-top: 130px;
+    font-size: 50px;
+    background-color: rgb(26, 71, 6);
+    color: #ffffff;
+    overflow: auto;
+    
+}
+
+#bulb{
+     
+    font-size: 500px;
+}
+
+#img {
+    width: 500px ;
+}
+

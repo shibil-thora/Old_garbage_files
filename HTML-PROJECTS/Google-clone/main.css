@@ -1,0 +1,221 @@
+body{
+    background-color: rgb(4,91,98);
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: white;
+    letter-spacing: -0.8px;
+}
+.images{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: hsl(0, 0%, 10%);
+    letter-spacing: -0.8px;
+}
+#google-apps{
+    color: white;
+    transform: translate(8px,8px);
+    opacity: 100%;
+    visibility: visible;
+    cursor: pointer;
+}
+.profile-circle{
+    width: 30px;
+    height: 30px;
+    transform: translate(5px,5px);
+    background-color: rgb(255, 255, 145);
+    border-radius: 50%;
+    visibility: visible;
+}
+
+/* HEADER*/
+.header{
+    
+    right: 0;
+    width:25% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+    column-gap: 15px;
+    position: fixed;
+    top: 10px ;
+    align-items: center;    
+}
+.header .gmail:hover , .images:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.back-ground-circle{
+    width:40px ;
+    height: 40px ;
+    background-color: rgba(6, 115, 123, 0.45);
+    border-radius:50% ;
+    visibility: hidden;
+    transform: translateY(2px);
+}
+.back-ground-circle:hover{
+    visibility: visible;
+}
+.back-ground-circle-profile{
+    width:40px ;
+    height: 40px ;
+    background-color: rgba(6, 115, 123, 0.45);
+    border-radius:50% ;
+    visibility: hidden;
+    transform: translateY(2px);
+}
+.back-ground-circle-profile:hover{
+    visibility: visible;
+}
+#main-logo{
+    height: 80px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px ;
+}
+#searchInput{
+    padding: 12px;
+    min-width: 490px ;
+    border-radius: 30px;
+    outline: none;
+    border:none ;
+}
+#searchInputAbove{
+    padding: 12px;
+    min-width: 400px ;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 50px;
+    position: absolute;
+    transform: translate(0px,-10px);
+    border:none ;
+}
+#searchInput2{
+    padding: 12px;
+    min-width: 490px ;
+    border-radius: 30px;
+    outline: none;
+    border:none ;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 185px ;
+    
+}
+
+::placeholder{
+    letter-spacing: 1px;
+    color: rgb(97, 97, 97);
+}
+/* #searchInput::-webkit-input-placeholder   */
+
+.icons-container{
+     
+     
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    max-width: 35% ;
+    height:200px ;
+    position: relative;
+    top: 180px ;
+     
+}
+.icon-box{
+    width:95px;
+    height: 100px;
+    background-color: rgb(12, 100, 107);
+    border-radius: 5px;
+    visibility: hidden;
+}
+.inside-icon-container{
+    background-color: rgb(4, 69, 73);
+    width: 40px;    
+    height: 40px;
+    top: 15px;
+    margin:auto ;
+    border-radius: 50%;
+    position: relative;
+    visibility: visible;
+}
+.text-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    transform: translate(24px , 28px);
+    visibility: visible;
+}
+#youtube-icon{
+    transform: translate(9px,9px);
+    position: absolute;
+    color: red;
+    font-size: 22px;
+    visibility: visible;
+}
+#dot-three{
+    visibility: hidden;
+    color: white;
+}
+.dot-three-container{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(12, 93, 99);
+    text-align: center;
+    border-radius: 50%;
+    transform: translate(70px,-36px);
+    visibility: hidden ;
+}
+
+
+.icon-box:hover{
+    visibility: visible;
+}
+.icon-box:hover #dot-three{
+    visibility: visible;
+}
+.dot-three-container:hover{
+    visibility: visible;
+}
+
+.insideimg{
+    transform: translate(9px,9px);
+    position: absolute;
+    height: 100px;
+    color: red;
+    font-size: 22px;
+    visibility: visible;
+}
+#searchInputAbove{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: -30px ;
+    right: -15px;
+}
+.material-symbols-outlined{
+    transform: translate(40px,8px);
+}
+#voice-icon{
+    height: 20px;
+    transform: translate(500px,-68px);
+    position: absolute;
+}

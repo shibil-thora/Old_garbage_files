@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+.box{
+    width:100px ;
+    height: 100px ;
+    border-radius: 15px;
+    border: 10px double ;
+}
+#box1{
+    background-color: aqua;
+    font-size: 5em;
+    text-align: center;
+}
+#box2{
+    background-color: rgb(31, 9, 179);
+    font-size: 5em;
+    text-align: center;
+}
+#box3{
+    background-color: rgb(243, 7, 129);
+    font-size:5em;
+    text-align: center;
+
+    align-self: center;
+}
+#box4{
+    background-color: rgb(9, 164, 20);
+    font-size: 5em;
+    text-align: center;
+}
+.container{
+    border: 10px solid rgb(63, 38, 38);
+    height: 90vh;
+    display: flex;
+    flex-direction: row ;
+     
+    flex-wrap: wrap ;
+     
+    
+}

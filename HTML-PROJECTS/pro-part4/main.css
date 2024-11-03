@@ -1,0 +1,8 @@
+body{
+    display : flow-root ;   
+    border : 3px dotted blue ;
+}
+img{
+    height : 100px ;
+    float : right ;
+}

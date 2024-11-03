@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(180, 216, 248);
+}
+input{
+    background-color: rgb(225, 255, 181);
+    border: 1px solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#bday{
+    color: blue;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,497 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 28px;
+    background-color: #190d1f;
+    border-bottom: 2px solid #ea2703;
+}
+.ri-phone-fill{
+    color: #190d1f;
+    transform: translate(1px , 1px);
+    position: absolute ;
+    font-size: 9px;
+}
+.phone-number{
+    color: #a9a9a9;
+    font-family: 'Heebo', sans-serif;
+    font-size: 11.5px ;
+    transform: translate(70px,8px);
+    position: absolute ;
+}
+.phone-icon-container{
+    height: 12px;
+    width: 12px;
+    background-color: #ea2703;
+    position: absolute ;
+    transform: translate(55px , 8px) ;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+.contact-container{
+    left: 10px ;
+    transform: translate(18px,0px);
+}
+.ri-facebook-fill{
+    color: #ea2703;
+    position: absolute ;
+    transform: translate(185px,0px);
+    font-size: 13px ;
+    height: 12px;
+    border-left: .2px solid #585b79;
+    border-right: .2px solid #585b79;
+    border-width: thin ;
+    padding: 8px; 
+}
+.ri-facebook-fill:hover{
+    background-color: #173c62;
+}
+.ri-twitter-fill{
+    color: #ea2703;
+    position: absolute ;
+    transform: translate(235px,0px);
+    font-size: 13px ;
+    height: 12px;
+    border-left: .2px solid #585b79;
+    border-right: .2px solid #585b79;
+    border-width: thin ;
+    padding: 8px; 
+}
+.ri-twitter-fill:hover{
+    background-color: #173c62;
+}
+.ri-instagram-line{
+    color: #ea2703;
+    position: absolute ;
+    transform: translate(285px,0px);
+    font-size: 13px ;
+    height: 12px;
+    border-left: .2px solid #585b79;
+    border-right: .2px solid #585b79;
+    border-width: thin ;
+    padding: 8px; 
+}
+.ri-instagram-line:hover{
+    background-color: #173c62;
+}
+
+#yt-logo{
+    position: absolute ;
+    transform: translate(335px,-3px);
+    height: 16px;
+    border-left: .2px solid #585b79;
+    border-right: .2px solid #585b79;
+    border-width: thin ;
+    padding: 8px; 
+}
+#yt-logo:hover{
+    background-color:#173c62 ;
+}
+.desc-text{
+    color: #a9a9a9;
+    font-family: 'Heebo', sans-serif;
+    font-size: 11.5px ;
+    transform: translate(660px,8px);
+    position: absolute ;
+    letter-spacing: 0px;
+}
+.ri-login-box-line{
+    color: #ea2703;
+    position: absolute ;
+    transform: translate(970px,0px);
+    font-size: 13px ;
+    height: 12px;
+    padding: 8px;
+}
+.login-text{
+    color: #ea2703;
+    font-family: 'Heebo', sans-serif;
+    font-size: 11.5px ;
+    transform: translate(1000px,8px);
+    position: absolute ;
+    letter-spacing: 0px;
+}
+.login-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#banner-image{
+    width: 425px ;
+    padding: 0;
+}
+.image-container{
+    margin-left: 65px ;
+}
+.head-bar{
+    height: 80px;
+    overflow: hidden;
+}
+.navbar-container{
+    position: relative;
+}
+ 
+.home-container{
+    background-color: #ea2703;
+    height: 35px ;
+    width: 55px ;
+    transform: translate(650px,-65px);
+    border-radius: 3px ;
+    float: left;
+}
+#home-text-container{
+    transform: translate(11px,11px);
+    position: absolute ;
+    color: white ;
+    font-size: 11px ;
+    font-family:'Heebo', sans-serif;
+    text-decoration: none
+}
+.e-ticket-container{
+    background-color: #ea2703;
+    height: 35px ;
+    width: 90px ;
+    transform: translate(652px,-65px);
+    border-radius: 3px ;
+    visibility: hidden;
+    float: left;
+}
+#e-ticket-text-container{
+    transform: translate(11px,11px);
+    position: absolute ;
+    visibility: visible;
+    color: #190d1f;
+    font-size: 11px ;
+    font-family:'Heebo', sans-serif;
+    text-decoration: none
+
+}
+.e-ticket-container:hover{
+    visibility: visible ;
+}
+.e-ticket-container:hover #e-ticket-text-container{
+    color: white;
+}
+.city-circular-container{
+    background-color: #ea2703;
+    height: 35px ;
+    width: 105px ;
+    transform: translate(650px,-65px);
+    border-radius: 3px ;
+    visibility: hidden;
+    float: left;
+}
+#city-circular-text-container{
+    transform: translate(11px,11px);
+    position: absolute ;
+    visibility: visible;
+    color: #190d1f;
+    font-size: 11px ;
+    font-family:'Heebo', sans-serif;
+    text-decoration: none
+}
+.city-circular-container:hover{
+    visibility: visible;
+}
+.city-circular-container:hover #city-circular-text-container{
+    color: white;
+}
+.notification-container{
+    background-color: #ea2703;
+    height: 35px ;
+    width: 100px ;
+    transform: translate(652px,-65px);
+    border-radius: 3px ;
+    visibility: hidden;
+    float: left;
+}
+#notification-text-container{
+    transform: translate(11px,11px);
+    position: absolute ;
+    visibility: visible;
+    color: #190d1f;
+    font-size: 11px ;
+    font-family:'Heebo', sans-serif;
+    text-decoration: none
+}
+.notification-container:hover{
+    visibility: visible;
+}
+.notification-container:hover #notification-text-container{
+    color: white;
+}
+
+.more-container{
+    background-color: #ea2703;
+    height: 35px;
+    width: 65px;
+    transform: translate(654px,-65px);
+    border-radius: 3px;
+    visibility: hidden;
+    float: left;
+}
+#more-text-container{
+    transform: translate(11px,11px);
+    position: absolute ;
+    visibility: visible;
+    color: #190d1f;
+    font-size: 11px ;
+    font-family:'Heebo', sans-serif;
+    text-decoration: none
+}
+.more-container:hover{
+    visibility: visible;
+}
+.more-container:hover #more-text-container{
+    color: white;
+}
+
+#back-banner-image{
+    width: 100%
+}
+
+.md-container{
+    height: 150px;
+    width: 410px;
+    float: left;
+    margin-left: 70px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 3px;
+}
+#md-text{
+    font-family:'Heebo', sans-serif;
+    letter-spacing: -0.5px;
+    color: #000000e1;
+    margin-left: 70px;
+}
+#md-image{
+    height: 120px;
+    position: absolute;
+    transform: translate(10px,10px);
+}
+#md-name{
+    position: absolute ;
+    transform: translate(150px,0px);
+    font-family:'Heebo', sans-serif;
+}
+#md-description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family:'Heebo', sans-serif;
+    transform: translate(150px,35px);
+    width:250px ;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.826);
+    text-align: justify ;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.299);
+    border-width: thin;
+}
+#know-more{
+    font-family:'Heebo', sans-serif;
+    color: #ea2703;
+    transform: translate(310px,30px);
+    font-size: 13px;
+}
+#know-anchor{
+    text-decoration: none;
+
+}
+#logistics-img{
+    border: 1px solid;
+    width: 410px ;
+    transform: translate(-410px,160px);
+    box-shadow: 1px 1px 5px;
+}
+#customer-head{
+    transform: translate(550px,-195px);
+    position: absolute;
+    font-family:'Heebo', sans-serif;
+}
+.customer-support-container{
+    height: 240px;
+    width: 410px;
+    float: left;
+    margin-left: 70px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 3px;
+    transform: translate(0px,-140px);
+}
+.support-heads{
+    transform: translate(15px,-5px);
+    position: absolute;
+    font-family:'Heebo', sans-serif;
+    color: #ea2703;
+}
+.ph-number{
+    transform: translate(15px,30px);
+    font-size: 13px;
+    font-family:'Heebo', sans-serif;
+}
+.mob-number{
+    transform: translate(15px,18px);
+    font-size: 13px;
+    font-family:'Heebo', sans-serif;
+}
+.mail{
+    transform: translate(17px,8px);
+    font-size: 13px;
+    font-family:'Heebo', sans-serif;
+}
+.mail-cr{
+    transform: translate(17px,40px);
+    font-size: 13px;
+    font-family:'Heebo', sans-serif;
+}
+.social-media-number{
+    transform: translate(15px,25px);
+    font-size: 13px;
+    font-family:'Heebo', sans-serif;
+}
+
+footer{
+    width: 100% ;
+    height: 450px;
+    margin: 0 ;
+    transform: translate(0px,190px);
+    background-color: #190d1f ;
+}
+.customer-support-footer{
+    position: absolute;
+    transform: translate(50px,15px);
+    width: 23%;
+    height: 370px;
+    float: left;
+     
+}
+#cust-footer-head{
+    color: white;
+    font-family:'Heebo', sans-serif;
+}
+#phno-footer{
+    color: white;
+    font-family:'Heebo', sans-serif;
+    font-size: 13px;
+}
+.phone-icon-container-ft{
+    height: 12px;
+    width: 12px;
+    background-color: #ea2703;
+    position: absolute ;
+    transform: translate(55px , 8px) ;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    color: #a9a9a9;
+}
+
+/* re writing code for that phone container for footer*/
+.phone-number-ft{
+    color: #d7d5d5;
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px ;
+    transform: translate(15px,0px);
+    position: absolute ;
+    letter-spacing: 0.5px;
+}
+.phone-icon-container-ft{
+    height: 12px;
+    width: 12px;
+    background-color: #ea2703;
+    position: absolute ;
+    transform: translate(0px , 0px) ;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+#email-footer{
+    color: #d7d5d5;
+    font-family:'Heebo', sans-serif;
+    font-size: 13px;
+}
+.email-content-ft{
+    color: #d7d5d5;
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px; 
+    letter-spacing: 0.5px;
+}
+
+.useful-Links-footer{
+    position: absolute;
+    transform: translate(350px,15px);
+    width: 23%;
+    height: 370px;
+    float: left;
+}
+
+#use-links-ft{
+    color: white;
+    font-family:'Heebo', sans-serif;
+}
+li{
+    color:  #d7d5d5;
+    font-family:'Heebo', sans-serif;
+    
+}
+ul{
+    margin:0;
+    padding-left:0px;
+    font-size: 13px;
+    line-height: 25px;
+    list-style-type: none ;
+}
+li::before{
+    content: '>';
+    color: #ea2703;
+    padding-right: 15px;
+}
+li:hover{
+    color:#ea2703;
+    padding-left: 5px;
+    transition-duration: 1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.related-links{
+    position: absolute ;
+    transform: translate(615px,15px);
+    width: 23%;
+    height: 370px;
+    float: left;
+}
+#related-links-ft-head{
+    color: white;
+    font-family:'Heebo', sans-serif;
+}
+.more-links-ft{
+    position: relative ;
+    transform: translate(850px,-225px);
+    width: 23%;
+    height: 370px;
+    float: left;
+
+}
+#more-links-ft-head{
+    color: white;
+    font-family:'Heebo', sans-serif;
+}
+.second-footer{
+    background-color: #190d1f;
+    transform: translate(0px,380px);
+    height: 30px;
+    border-top: 1px solid #a9a9a9;
+    border-width: thin;
+}
+#copyright{
+    color: white;
+    transform: translate(-500px,0px);
+    text-align: row;
+    justify-content: center;
+    font-size: 10px;
+    vertical-align: middle;
+}
+.second-footer{
+    width: 100%;
+}
