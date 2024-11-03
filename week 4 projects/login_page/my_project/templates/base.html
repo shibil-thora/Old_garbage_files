@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}">
+</head>
+<body class="vh-100">
+    <nav class="navbar">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 mx-auto text-white fw-bolder">{% block navhead %}{% endblock navhead %}</span>
+        </div>
+      </nav>
+    {% block content %}
+   
+    {% endblock content %}
+    <footer class="footer fixed-bottom p-3 text-center text-light">
+      &copy; Shibil Brototype BCT 158 
+    </footer>
+</body>
+</html>

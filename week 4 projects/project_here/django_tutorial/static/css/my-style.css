@@ -1,0 +1,38 @@
+.nav-link  {
+    color: rgb(119, 11, 140);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.nav-link:hover  {
+    color:rgb(5, 96, 81);
+    background-color: rgba(21, 186, 158, 0.422);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 1px black;
+}
+
+.navbar-brand  {
+    font-weight: bold; 
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 2px 2px 5px rgb(119, 11, 140);;
+}
+.navbar-brand:hover  {
+    color: rgb(255, 255, 255) !important;
+    cursor: default;
+}
+
+p::selection  {
+    background-color: rgb(7, 92, 7);
+    color: rgb(179, 253, 69);
+}
+
+.para  {
+    background-color: rgb(119, 11, 140);
+}
+
+.login_cont  {
+    margin: auto;
+    transform: translate(0, 80px);
+}
+
+

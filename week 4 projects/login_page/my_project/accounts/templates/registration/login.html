@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+Login
+{% endblock title %}
+{% block navhead %}
+Login
+{% endblock navhead %}
+{% block content %}
+
+
+
+<div class="container text-center my-5">
+    <div class="card w-50 text-center d-inline-block my-5">
+        <div class="card-header fw-bold text-light">
+          Welcome Home!
+        </div>
+        <div class="card-body bg-light">
+            <form action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Login" class="btn btn-warning">
+            </form> 
+        </div>
+      </div>
+</div>
+{% endblock content %}
+
+

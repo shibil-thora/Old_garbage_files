@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+{% block head %}Admin Panel{% endblock head %}
+{% block content %}
+
+
+<div class="container">
+
+
+    <div class="container my-2 ms-6">
+        <div class="row">
+            <div class="col-6">
+            <form action="" method="GET">
+            <label for="search"></label>
+            <input type="text" id="search_key" name="search_key" class="form-control border border-dark d-inline">
+            </div>
+            <div class="col-6">
+            <input type="submit" value="search" class="btn btn-success my-4 d-inline"> 
+            </div>
+            </form>
+            
+        </div>
+
+    <table class="table" border='1'>
+        <thead>
+        <tr>
+            <th scope="col" class="text-info">Username</th>
+            <th scope="col" class="text-info">mail</th>
+            <th scope="col" class="text-warning">edit</th>
+            <th scope="col" class="text-danger">delete</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+        <tr>
+
+            {% if user.is_superuser %}
+            <td class="bg-success text-white">{{user.username}} (super admin) </td>
+            {% else %}
+            <td class="bg-success text-white">{{user.username}}</td>
+            {% endif %}
+
+            {% if not user.is_superuser %}
+            <td class="bg-success text-white">{{user.email}}</td>
+            <td class="bg-success text-white"><a href="{% url 'edit' user.id %}" class="btn btn-warning" type="submit">edit</a></td>
+            <td class="bg-success text-white"><a href="{% url 'delete' user.id %}" class="btn btn-danger" type="submit">delete</a></td>
+            {% else %}
+            <td class="bg-success text-white">{{user.email}}</td>
+            <td class="bg-success text-white"><a href="{% url 'edit' user.id %}" class="btn btn-warning disabled" type="submit">edit</a></td>
+            <td class="bg-success text-white"><a href="{% url 'delete' user.id %}" class="btn btn-danger disabled" type="submit">delete</a></td>
+            {% endif %}
+
+        </tr>
+             {% endfor %}
+        </table>    
+        
+        </div>
+
+        </div>
+        <div class="container text-center">
+        <a href="{% url 'home' %}" class="btn btn-warning">home</a>
+        <a href="{% url 'add_user' %}" class="btn btn-success">add +</a>
+        </div>
+
+{% endblock content %}
+

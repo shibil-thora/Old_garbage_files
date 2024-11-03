@@ -1,0 +1,25 @@
+body  {
+    background-image: linear-gradient( rgb(178, 224, 252), rgba(112, 11, 83, 0.47))
+}
+
+.navbar  {
+    background-color: rgb(112, 11, 83);
+}
+
+.h3  {
+    color: rgb(112, 11, 83) ;
+    box-shadow: 0 1px 2px .5px black !important;
+    width: 38%;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.card-header  {
+    background-color: rgb(112, 11, 83) !important;
+}
+
+footer  {
+    background-color: rgb(112, 11, 83) !important;
+    display: inline-block;
+    min-width: 100%;
+}
+

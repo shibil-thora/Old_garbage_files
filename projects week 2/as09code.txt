@@ -1,0 +1,50 @@
+#include <stdio.h>
+void main ()
+{
+    int bankBalance = 1000 , choice ; 
+    int amount ; 
+    int yesOrNo ;
+    
+    printf ("-------------------ATM MACHINE-------------------") ;
+    
+    while (1)
+    {
+        printf ("\nPRESS 1 FOR DEPOSITE") ;
+        printf ("\nPRESS 2 FOR DEPOSITE") ;
+        printf ("\nPRESS 3 FOR BALANCE ENQUIRY\n") ;
+        printf ("\nENTER YOUR CHOICE : ") ;
+        scanf ("%d",&choice) ;
+        
+        
+        switch (choice)
+        {
+            case 1 : 
+            printf ("\nENTER THE AMOUNT : ") ;
+            scanf ("%d",&amount) ;
+            bankBalance = bankBalance + amount ;
+            break ; 
+            
+            case 2 : 
+            printf ("\nENTER THE AMOUNT : ") ;
+            scanf ("%d",&amount) ;
+            bankBalance = bankBalance - amount ; 
+            break ; 
+            
+            case 3 : 
+            printf ("\nCURRENT BALANCE : %d",bankBalance) ;
+            break ; 
+            
+            default : 
+            printf("\nWRONG ENTRY!") ;
+            break ;
+            
+        }
+        printf ("\nDO YOU WANT TO CONTINUE TRANSACTION ? ") ; 
+        printf ("\nPRESS 1 FOR YES") ; 
+        printf ("\nPRESS 2 FOR NO\n") ; 
+        scanf ("%d",&yesOrNo) ;
+        
+        if (yesOrNo == 2) break ;
+        
+    }
+}

@@ -1,0 +1,59 @@
+#include <stdio.h>
+void getArray (int[100][100] , int ) ;
+void addArray (int[100][100] , int[100][100] , int[100][100] , int ) ; 
+void displayArray (int[100][100] , int ) ; 
+
+void main ()
+{
+    int n ;
+    int arr1[100][100] ;
+    int arr2[100][100] ; 
+    int sumArray[100][100] ;
+    
+    printf ("Enter the size of Array : ") ;
+    scanf("%d",&n) ; //2 
+    printf("Enter the elements of array1 : \n");
+    getArray(arr1 , n) ;
+    printf("Enter the elements of array2 :\n");
+    getArray(arr2 , n) ; 
+    addArray(arr1,arr2,sumArray,n) ; 
+    displayArray(sumArray,n) ; 
+}
+
+void getArray(int arr[100][100] , int n)
+{
+    int i , j ;
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            scanf ("%d",&arr[i][j]) ;
+        }
+    }
+}
+
+void addArray(int arr1[100][100] , int arr2[100][100] , int sumArray[100][100] , int n) 
+{
+    int i , j ; 
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            sumArray[i][j] = arr1[i][j] + arr2[i][j] ;
+        }
+    }
+}
+
+void displayArray(int sumArray[100][100] , int n) 
+{
+    int i , j ;
+    printf ("sum of array1 and array2 is : \n") ;
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            printf ("%d\t",sumArray[i][j]) ;
+        }
+        printf ("\n") ;
+    }
+}

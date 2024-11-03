@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<p class="h1 text-success bg-warning text-center border-3 border-dark border-bottom border-top py-2">Our Doctors</p>
+
+{% comment %} for loop for doctors cards {% endcomment %}
+
+<div class="container-fluid text-center bg-light">
+    {% for d in docs %}
+    <div class="card text-center m-2" style="width: 18rem; display: inline-block;">
+        <img src="{{d.doc_image.url}}" class="card-img-top" alt="doctor">
+        <div class="card-body">
+          <h5 class="card-title">Dr. {{d.doc_name}} </h5>
+          <p class="card-text">{{d.dep_name}} Department</p>
+          <a href="{% url 'booking' %}" class="btn btn-success ">Book An Appointment</a>
+        </div>
+      </div>
+      {% endfor %}
+</div>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<p class="h1 text-success bg-warning text-center border-3 border-dark border-bottom border-top py-2">Make An Appointment</p>
+
+<div class="container text-center w-50 my-5 bg-light p-5 border border-dark" style="box-shadow: 1px 1px 5px 0.1px black;">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success m-2">submit</button>
+    </form>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+class MyClass extends Area {
+    Scanner s = new Scanner (System.in) ;
+    public static void main(String[] args) {
+
+        System.out.println("1.Circle") ;
+        System.out.println("2.Square") ;
+        System.out.println("3.Rectancle") ;
+        System.out.println("4.Triangle") ;
+        System.out.print("\nEnter you choice : ") ;
+        MyClass mc = new MyClass() ;
+        int choice = mc.s.nextInt() ;
+
+        if (choice == 1)
+            mc.circle();
+        else if (choice ==2)
+            mc.square();
+        else if (choice == 3)
+            mc.rectangle();
+        else if (choice == 4)
+            mc.triangle();
+        else System.out.println("Wrong Entry!") ;
+
+
+    }
+    void circle ()
+    {
+        System.out.print("Enter the radius : ") ;
+        double r = s.nextDouble() ;
+        double area = super.circle(r) ;
+        System.out.println("Area of the circle is : "+area) ;
+
+    }
+    void square ()
+    {
+        System.out.print("Enter the length : ") ;
+        double l = s.nextDouble() ;
+        double area = super.square(l) ;
+        System.out.println("Area of the square is : "+area) ;
+
+    }
+    void rectangle ()
+    {
+        System.out.print("Enter the length and bridth :") ;
+        double l = s.nextDouble();
+        double b = s.nextDouble() ;
+        double area = super.rectangle(l,b) ;
+        System.out.println("Area of the rectancle is : "+area) ;
+    }
+    void triangle ()
+    {
+        System.out.print("Enter the base length : ") ;
+        double b = s.nextDouble();
+        System.out.print("Enter the height : ") ;
+        double h = s.nextDouble() ;
+        double area = super.triangle(b,h) ;
+        System.out.println("Area of the triangle is : "+area) ;
+    }
+}
+
+class Area {
+    double circle (double radius)
+    {
+        return Math.PI * radius * radius ;
+    }
+    double square (double length)
+    {
+        return length * length ;
+    }
+    double rectangle (double lenght , double bridht)
+    {
+        return lenght * bridht ;
+    }
+    double triangle (double base , double height)
+    {
+        return  0.5 * base * height ;
+    }
+}

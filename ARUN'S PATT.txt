@@ -1,0 +1,36 @@
+mandhi : 180
+dosa : 20
+bus : 5 
+dosa : 20
+roll: 20 
+gpay : -120
+night dosa+pazhamPori : 20
+---------------------------------------
+Balance : 145 to pay .
+karthik : some balance of that porotta thing . 
+---------------------------------------
+Loose coupling
+ 
+----------------------------------------
+public class KeyController extends KeyAdapter {
+        public void keyPressed (KeyEvent e) {
+            if (e.getKeyCode() == 'W')
+            {
+                direction = 'W' ;
+                System.out.println("hi") ;
+            }
+            else if (e.getKeyCode() == 'S')
+            {
+                direction = 'S' ;
+            }
+            else if (e.getKeyCode() == 'D')
+            {
+                direction = 'D' ;
+            }
+            else if (e.getKeyCode() == 'A')
+            {
+                direction = 'A' ;
+            }
+
+        }
+    }

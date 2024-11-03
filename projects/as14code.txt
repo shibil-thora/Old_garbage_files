@@ -1,0 +1,41 @@
+#include <stdio.h>
+void main ()
+{
+    int i , j , n ; 
+    int matrix1[20][20] , matrix2[20][20], sumMatrix[20][20] ; 
+    
+    printf ("Enter the size of Arrays : ") ; 
+    scanf ("%d",&n) ; 
+    
+    printf ("Enter the elements of 1st 2D array : \n") ;
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            printf ("matrix1 [%d] [%d] : ",i,j) ; 
+            scanf("%d",&matrix1[i][j]) ; 
+        }
+    }
+    
+    printf ("Enter the elements of 2nd 2D array : \n") ;
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            printf ("matrix2 [%d] [%d] : ",i,j) ; 
+            scanf("%d",&matrix2[i][j]) ; 
+        }
+    }
+    
+    //calculating and priting sum
+    printf ("Sum of 2 2D arrays : \n") ; 
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            sumMatrix[i][j] = matrix1[i][j] + matrix2[i][j] ;
+            printf("%d\t",sumMatrix[i][j]) ;
+        }
+        printf ("\n") ;
+    }
+}

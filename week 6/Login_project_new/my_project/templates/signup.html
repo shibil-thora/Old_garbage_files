@@ -1,0 +1,56 @@
+{% extends "login.html" %}
+{% block content %}
+<body class="login-back1">
+
+    {% for messagge in messagges %}
+    <div class="alert alert-info">{{message}}</div>
+    {% endfor %}
+
+    <form action="" method="POST">
+    {% csrf_token %}
+   <div class="login-card container">
+        <p class="h3 text-center text-dark fw-bold py-2">Sign Up</p>
+
+    <div class="container w-75 my-2 ">
+    <label for="exampleInputEmail1" class="text-dark">Username</label>
+    <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" placeholder="" required>
+    </div>
+
+    <div class="container w-75 my-2 ">
+        <label for="exampleInputEmail1" class="text-dark">Email id</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="" required>
+    </div>
+
+    <div class="container w-75 my-2">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1" aria-describedby="emailHelp" placeholder="" required>
+    </div>
+
+    <div class="container w-75 my-2">
+        <label for="password">Confirm password</label>
+        <input type="password" class="form-control" id="password2" name="password2" aria-describedby="emailHelp" placeholder="" required>
+    </div>
+
+    <div class="container text-center">
+        {% if messages %}
+        {% for message in messages %}
+           <p class="message-text fw-bold">  {{ message }} </p>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="container text-center">
+        <input type="submit" value="register" class="login-button btn my-3 shadow text-light">
+    </div>
+    
+    
+    </form>
+     
+
+
+    </div>
+    <p class="text-center">Back to <a href="{% url 'login' %}" class=" text-success">Login</a></p>
+    
+     
+</body>
+{% endblock content %}

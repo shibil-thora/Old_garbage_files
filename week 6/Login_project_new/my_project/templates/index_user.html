@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    
+  <div class="head container fw-bold my-3 text-center text-light w-25 ">Home</div>
+
+
+  <div class="jumpo container text-center ">
+
+     <div class="jumbotron">
+      <h1 class="display-4">Hello, Users!</h1>
+      <p class="lead">This is a simple home page for testing pupose only , designed an developed by shibil.</p>
+      <hr class="my-4">
+      <p>You can logout by pressing this button provided below.</p>
+      <p class="lead">
+        <a class="btn btn-warning btn-lg" href="{% url 'logout' %}" role="button">Log Out</a>
+      </p>
+    </div>
+  </div>
+     
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>

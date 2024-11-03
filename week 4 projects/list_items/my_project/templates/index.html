@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Items</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/my-style2.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid text-center">
+          <span class="navbar-brand mb-0 h1 d-inline-block mx-auto text-light">List Items</span>
+        </div>
+      </nav>
+
+
+    <div class="container my-5 w-50">
+
+        <div class="card text-center border border-primary">
+            <div class="card-header bg-primary text-light fw-bolder">
+              Vegitables
+            </div>
+            <div class="card-body">
+                {% for i in items %}
+                <div class="container text-left w-75">
+                    <ul class="list-group ">
+                        <li class="list-group-item list-group-item-primary my-1"> {{ i.item }}</li>
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="card-footer bg-primary text-light fw-bold">
+              have a nice day!
+            </div>
+          </div>
+
+    </div>
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-primary text-muted fixed-bottom">
+    
+    <!-- Copyright -->
+    <div class="text-center p-3 text-light">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://google.com/">Google.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

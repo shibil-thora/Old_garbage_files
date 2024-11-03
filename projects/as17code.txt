@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Main {
+    void addition (float a , float b)
+    {
+        float result = a + b ;
+        System.out.println("Result : "+result) ;
+    }
+    void subtraction (float a , float b)
+    {
+        float result = a - b ;
+        System.out.println("Result : "+result) ;
+    }
+    void multiplication (float a , float b)
+    {
+        float result = a * b ;
+        System.out.println("Result : "+result) ;
+    }
+    void division (float a , float b)
+    {
+        float result = a / b ;
+        System.out.println("Result : "+result) ;
+    }
+
+    public static void main(String[] args) {
+        Main m = new Main () ;
+        Scanner s = new Scanner(System.in) ;
+        System.out.println("Enter 2 numbers : ");
+        int num1 = s.nextInt() ;
+        int num2 = s.nextInt() ;
+
+        System.out.print("\nENTER 1 FOR addition \nENTER 2 FOR subtraction \n" +
+                "" +
+                "ENTER 3 FOR multiplication \nENTER 4 FOR division \nEnter a choice: ") ;
+        int choice = s.nextInt() ;
+
+        if (choice == 1)
+            m.addition(num1 , num2) ;
+        else if (choice == 2)
+            m.subtraction(num1 , num2) ;
+        else if (choice == 3)
+            m.multiplication(num1 , num2) ;
+        else if (choice == 4)
+            m.division(num1 , num2) ;
+        else
+            System.out.println("use a common sense ");
+
+    }
+}

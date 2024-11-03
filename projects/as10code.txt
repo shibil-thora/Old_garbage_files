@@ -1,0 +1,45 @@
+#include <stdio.h>
+void main ()
+{
+    int i , n ; 
+    int arr1[100] ; 
+    int arr2[100] ;
+    int temp ; 
+    
+    printf ("Enter the size of the arrays : ") ; 
+    scanf("%d",&n) ; 
+    printf ("Enter the elements of 1st array : \n") ; 
+    for (i=0;i<n;i++)
+    {
+        printf ("arr1[%d] : ",i) ;
+        scanf ("%d",&arr1[i]) ; 
+    }
+
+    printf("Enter the elements of the second array : \n") ; 
+    for (i=0;i<n;i++)
+    {
+        printf ("arr2[%d] : ",i) ; 
+        scanf("%d",&arr2[i]) ; 
+    }
+
+    //swapping the elements of the arrays . 
+    for (i=0;i<n;i++)
+    {
+        temp = arr1[i] ; 
+        arr1[i] = arr2[i] ; 
+        arr2[i] = temp ; 
+    }
+    
+    //now printing the arrays 
+    printf ("now the 1st array : \n") ;
+    for (i=0;i<n;i++)
+    {
+        printf ("%d\t",arr1[i]) ;
+    }
+
+    printf ("\nnow the second array : \n") ; 
+    for (i=0;i<n;i++)
+    {
+        printf ("%d\t",arr2[i]) ;
+    }
+}

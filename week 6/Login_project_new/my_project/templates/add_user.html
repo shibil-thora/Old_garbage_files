@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block head %}Create user{% endblock head %}
+{% block content %}
+<div class="create-form container w-50 my-5">
+    <div class="card text-left">
+        <div class="card-header text-left text-light fw-bold bg-success">
+          Enter details
+        </div>
+        <div class="card-body1 bg-light">
+           <form action="" method="POST">
+            {% csrf_token %}
+            
+         
+             <div class="container my-2 ">
+             <label for="exampleInputEmail1" class="text-dark">Username</label>
+             <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" placeholder="" required>
+             </div>
+         
+             <div class="container my-2 ">
+                 <label for="exampleInputEmail1" class="text-dark">Email id</label>
+                 <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="" required>
+             </div>
+         
+             <div class="container my-2">
+                 <label for="password">Password</label>
+                 <input type="password" class="form-control" id="password1" name="password1" aria-describedby="emailHelp" placeholder="" required>
+             </div>
+         
+             <div class="container my-2">
+                 <label for="password">Confirm password</label>
+                 <input type="password" class="form-control" id="password2" name="password2" aria-describedby="emailHelp" placeholder="" required>
+             </div>
+         
+             <div class="container text-center">
+                 {% if messages %}
+                 {% for message in messages %}
+                    <p class="message-text fw-bold">  {{ message }} </p>
+                 {% endfor %}
+                 {% endif %}
+             </div>
+         
+             <div class="container text-left">
+                 <input type="submit" value="Create +" class="login-button1 btn my-3 shadow text-light bg-success">
+             </div>
+           </form>
+           
+        </div>
+      </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,38 @@
+from abc import ABC, abstractmethod
+
+
+class Calculator(ABC):
+    @abstractmethod
+    def add(self, a, b):
+        pass
+
+    @abstractmethod
+    def sub(self, a, b):
+        pass
+
+    @abstractmethod
+    def mul(self, a, b):
+        pass
+
+    @abstractmethod
+    def div(self, a, b):
+        pass
+
+
+class Operations(Calculator):
+
+    def div(self, a, b):
+        return a / b
+
+    def mul(self, a, b):
+        return a * b
+
+    def sub(self, a, b):
+        return a - b
+
+    def add(self, a, b):
+        return a + b
+
+
+print(f"output: {Operations().add(5, 2)}")
+# we can call every fns using object of Operation
